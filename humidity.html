@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Humidity</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="container">
+      <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="index.html">Climate Data</a>
+            </div>
+            <ul class="navbar">
+              <!--<li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Page 1</a></li>
+              <li><a href="#">Page 2</a></li>
+              <li><a href="#">Page 3</a></li>-->
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="temperature.html">Latitude vs. Temperature</a>
+                    <a class="dropdown-item" href="wind_speed.html">Latitude vs. Wind Speed</a>
+                    <!--<div class="dropdown-divider"></div>-->
+                    <a class="dropdown-item" href="cloudiness.html">Latitude vs. Cloudiness</a>
+                    <a class="dropdown-item" href="humidity.html">Latitude vs. Humidity</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="comparisons.html">Comparisons</a>
+                    <a class="dropdown-item" href="data.html">Data</a>
+                  </div>
+            </ul>
+          </div>
+        </nav>
+
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+
+    <div class="container">
+        <div class="jumbotron">
+          <h3 class="display-7">Latitude vs. Humidity</h3>
+          
+          <hr class="my-4">
+          <div class="col-md-12 d-flex align-items-stretch">
+              <div class="card", style="width:100%">
+                
+                <div class="card-body">
+                  <!--<h5 class="card-title">Temperature</h5>-->
+                  <img src="/Rutgers Data Analytics Bootcamp\Homework11_HTML_CSS\Images\Project_Images\Humidity_vs_Latitude_bar2.png" alt="Latitude vs. Temperature" class="img-thumbnail" max-width: 100%>   
+                  <p class="card-text">Plot of latitude vs. humidity.</p>
+                  <!--<a href="#" class="btn btn-primary">View Graph</a>-->
+                </div> 
+              </div>     
+            </div>
+          <p>This chart shows the distribution of humidity over various latitude bins. In general we see high humidity at 0-9 degrees latitude, low humidity at 20-29 degrees latitude, and fairly consistent humidity levels from 30 to 79 degrees latitude, but at lower humidity levels than the 0-9 degree latitude bin.  This is as expected as rainforests are concentrated around the equator so we see the highest average humidity at the 0 to 9 degree latitude bin.  Deserts are concentrated around 30 degrees latitude and have low humidity so we see the lowest average humidity bin at the 20 to 29 degree latitude bin.  </p>
+         
+          
+          
+        </div>
+      </div>
+<!--
+    <div class="container">
+      <div class="jumbotron">
+      <h3 class="display-7">Visualizations</h3>
+      <hr class="my-4">
+          
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="card" >
+            <div class="card-body">
+              <h5 class="card-title">Temperature</h5>
+              <img src="/Rutgers Data Analytics Bootcamp\Homework11_HTML_CSS\Images\Project_Images\Temperature_vs_Latitude.png" alt="Latitude vs. Temperature" class="img-thumbnail" >   
+              <p class="card-text">Plot of latitude vs. temperature.</p>
+              <a href="#" class="btn btn-primary">View Graph</a>
+            </div> 
+          </div>     
+        </div>
+            
+        <div class="col-md-6 d-flex align-items-stretch">
+            <div class="card" >
+              <div class="card-body">
+                <h5 class="card-title">Wind Speed</h5>
+                
+                <img src="/Rutgers Data Analytics Bootcamp\Homework11_HTML_CSS\Images\Project_Images\Windspeed_vs_Latitude_bar.png" alt="Latitude vs. Temperature" class="img-thumbnail" >
+                  
+                <p class="card-text">Plot of latitude vs. wind speed.</p>
+                <a href="#" class="btn btn-primary">View Graph</a>
+              </div> 
+            </div>     
+          </div>
+        </div>
+        
+        <br>
+
+        <div class="row">
+
+          <div class="col-md-6 d-flex align-items-stretch">
+              <div class="card" >
+                <div class="card-body">
+                  <h5 class="card-title">Cloudiness</h5>
+                  <img src="/Rutgers Data Analytics Bootcamp\Homework11_HTML_CSS\Images\Project_Images\Cloudiness_vs_Latitude_bar.png" alt="Latitude vs. Temperature" class="img-thumbnail" >  
+                  <p class="card-text">Plot of latitude vs. cloudiness.</p>
+                  <a href="#" class="btn btn-primary">View Graph</a>
+                </div> 
+              </div>     
+            </div> 
+
+            <div class="col-md-6 d-flex align-items-stretch">
+              <div class="card" >
+                <div class="card-body">
+                  <h5 class="card-title">Humidity</h5>
+                  <img src="/Rutgers Data Analytics Bootcamp\Homework11_HTML_CSS\Images\Project_Images\Humidity_vs_Latitude_bar2.png" alt="Latitude vs. Temperature" class="img-thumbnail" >  
+                  <p class="card-text">Plot of latitude vs. humidity.</p>
+                  <a href="#" class="btn btn-primary">View Graph</a>
+                </div> 
+              </div>     
+            </div>
+        </div>
+      </div>
+    
+  
+  
+  </div>
+    <main>
+      
+        
+        
+        
+        </article>
+      </section>
+    </main>
+  </div>
+  -->
+</body>
+
+</html>
